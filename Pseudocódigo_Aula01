@@ -1,1 +1,46 @@
+Algoritmo Lokomat || ZeroG
+Var VELOCIDADE, TEMPO_CONTROLE TEMPO_EXERCICIO, PESO,
+%_SUSPENSA, PESO_SUSPENSO: real
+Var ESTADO_LOKOMAT, ESTADO_ZEROG, AJUSTE_PACIENTE: boolean
+Início
+Escreva(Usar Lokomat ou ZeroG)
+Se(Lokomat)
+Escreva(Digite a velocidade em Km/h)
+Escreva(Digite o tempo do exercício em minutos)
+Leia(VELOCIDADE)
+Leia(TEMPO_EXERCICIO)
+Escreva(A velocidade escolhida é, VELOCIDADE, o tempo escolhido é,
+TEMPO)
+Escreva(Iniciar exercício ou Corrigir valores)
+Se(Iniciar exercício)
+ESTADO_LOKOMAT←ligado
+Se(Corrigir valores)
+Voltar para Se(lokomat)
+Enquanto(AJUSTE_PACIENTE ≠ OK)
+Operador ajustando
+Enquanto(TEMPO_CONTROLE< TEMPO_EXERCICIO)
+TEMPO_CONTROLE ++
+ESTADO_LOKOMAT←desligado
+Escreva(Inserir novos parâmetros, Voltar ao menu ou Finalizar exercício)
+Se(Inserir novos parâmetros)
+Voltar para opção inserir velocidade
+Se(Voltar ao menu)
+Voltar para menu Lokomat ou ZeroG
+Se(Finalizar exercício)
+Encerrar a atividade
 
+Se(ZeroG)
+Escreva(Digite o peso do paciente)
+Escreva(Digite a porcentagem a ser suspensa)
+Leia(PESO)
+Leia(%_SUSPENSA)
+PESO_SUSPENSO←PESO * (%_SUSPENSA / 100)
+ESTADO_ZEROG ←ligado
+Escreva(Inserir novos parâmetros, Voltar ao menu ou Finalizar exercício)
+Se(Inserir novos parâmetros)
+Voltar para a opção inserir peso
+Se(Voltar ao menu)
+Voltar para menu Lokomat ou ZeroG
+Se(Finalizar exercício)
+ESTADO_ZEROG ← desligado
+Encerrar a atividade
