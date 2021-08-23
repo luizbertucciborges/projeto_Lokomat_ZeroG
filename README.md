@@ -1,6 +1,6 @@
 # projeto_Lokomat_ZeroG
 
-Repositório para alocar arquivos relacionados ao projeto de reabilitação com os equipamentos Lokomar e ZeroG. 
+Repositório para alocar arquivos relacionados ao projeto de reabilitação com os equipamentos Lokomat e ZeroG. 
 
 Os arquivos são públicos e sugestões de melhoria podem ser realizadas através do github, seguindo os padões da plataforma: 
 1) Fork o repositório para sua conta.
